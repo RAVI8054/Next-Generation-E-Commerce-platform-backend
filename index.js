@@ -11,14 +11,11 @@ dotenv.config();
 import userRouter from "./route/user.route.js";
 import categoryRouter from "./route/category.route.js";
 import productRouter from "./route/product.route.js";
-<<<<<<< HEAD
-import { addAddressController } from "./controllers/address.controller.js";
-=======
 import cartRouter from "./route/cart.route.js";
 import homeSlidesRouter from "./route/homeSlides.route.js";
+import addressRouter from './route/address.route';
 
 
->>>>>>> 20ed87c906445456ff07c2443946fa0e2f3d02f2
 
 const app = express();
 
@@ -41,13 +38,10 @@ app.get("/", (request, response) => {
 app.use('/api/user', userRouter);
 app.use('/api/category', categoryRouter);
 app.use('/api/product', productRouter);
-<<<<<<< HEAD
-app.use('/api/address', addAddressController);
+app.use('/api/address', addressRouter);
 
-=======
 app.use('/api/cart', cartRouter);
 app.use('/api/homeSlides', homeSlidesRouter);
->>>>>>> 20ed87c906445456ff07c2443946fa0e2f3d02f2
 
 // Start server after DB connection
 const PORT = process.env.PORT || 8000;
