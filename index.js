@@ -13,7 +13,7 @@ import categoryRouter from "./route/category.route.js";
 import productRouter from "./route/product.route.js";
 import cartRouter from "./route/cart.route.js";
 import homeSlidesRouter from "./route/homeSlides.route.js";
-import addressRouter from './route/address.route';
+import addressRouter from './route/address.route.js';
 
 
 
